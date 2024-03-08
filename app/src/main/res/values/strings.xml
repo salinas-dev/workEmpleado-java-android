@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Work Empleado</string>
+    <string name="titulo_activity_main">Calculadora de sueldo de empleado</string>
+    <string name="label_nombre_empleado">Nombre del empleado:</string>
+    <string name="label_tipo_empleado">Tipo de empleado:</string>
+
+    <string-array name="tipo_empleado_array">
+        <item>Tipo 1</item>
+        <item>Tipo 2</item>
+        <item>Tipo 3</item>
+        <item>Tipo 4</item>
+    </string-array>
+    <string name="label_horas_trabajadas">Horas trabajadas:</string>
+    <string name="label_cuota_hora">Cuota por hora:</string>
+    <string name="btn_calcular_sueldo">Calcular sueldo</string>
+    <string name="label_resultado_sueldo">Sueldo a pagar:</string>
+</resources>

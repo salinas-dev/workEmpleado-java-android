@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/empleado"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/nombre_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        />
+
+    <EditText
+        android:id="@+id/nombre_edit_text"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_toEndOf="@id/nombre_label"
+        android:hint="Ingrese el nombre del empleado"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:layout_marginLeft="80dp"
+        />
+
+    <TextView
+        android:id="@+id/tipo_empleado_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de empleado:"
+        android:textSize="18sp"
+        android:layout_below="@id/nombre_label"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <Spinner
+        android:id="@+id/tipo_empleado_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/tipo_empleado_label"/>
+
+    <TextView
+        android:id="@+id/horas_trabajadas_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horas trabajadas:"
+        android:textSize="18sp"
+        android:layout_below="@id/tipo_empleado_spinner"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"/>
+
+    <EditText
+        android:id="@+id/horas_trabajadas_edit_text"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_toEndOf="@id/horas_trabajadas_label"
+        android:hint="Ingrese las horas trabajadas"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/cuota_por_hora_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuota por hora:"
+        android:textSize="18sp"
+        android:layout_below="@id/horas_trabajadas_edit_text"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"/>
+
+    <EditText
+        android:id="@+id/cuota_por_hora_edit_text"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/cuota_por_hora_label"
+        android:digits="0123456789."
+        android:hint="Ingrese la cuota por hora"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:id="@+id/calcular_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular sueldo"
+        android:layout_below="@id/cuota_por_hora_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/sueldo_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calcular_button"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</LinearLayout>
+
